@@ -1,9 +1,9 @@
 # listar_colunas_tabelas_mysql
-Aplicação Desenvolvida para realizar consultar e listar as tabelas e Colunas de um banco de dados.
+Aplicação Desenvolvida para consultar e listar as tabelas e Colunas de um banco de dados em Mysql.
 
 -----------------------
 
-**CONFIGURAÇÕES INICIAIS**
+**SELECIONANDO BANCO DE DADOS**
 - Antes da execução, é necessário a criação do database e da tabela  (MYSQL),conforme instrução no arquivo disponível na raíz do repositório.(bd_cadastro.txt)
 - Configurar os dados de conexão com banco de dados através do arquivo modulos/cn.php
 
