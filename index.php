@@ -1,10 +1,12 @@
 <?php
      include_once('includes/topo.php');
+     include_once('includes/modal_load.php');
+     
 ?>
 <body>
 
 
-    <form class="frm_registro">
+    <form class="frm_registro" id='frm_regist'>
                     
              <div class="row">	
                 <div class="grupo_cxs col-6">
@@ -47,17 +49,39 @@
                             </div>	
                     </div>
                     <div class="row">	
-                            <div class="grupo_cxs col-3" id="grupo_cx_id">
-                                <p class='info_database'>> Database Disconect</p>
+                            <div class="grupo_cxs col-4" id="grupo_cx_id">
+                                <p class='info_database'>> Status - Disconnected</p>
                             </div>
                     </div>
 
                     <div class="row">	
-                            <div class="grupo_cxs col-3 grupo_btns" id="grupo_cx_id">
+                            <div class="grupo_cxs col-5  grupo_btns" id="grupo_cx_id">
                                 <input class='btns' type="button" value="Testar Conexão" id='btn_tst_con'>
-                                <input class='btns' type="button" value="Listar Colunas">
+                                <input class='btns' type="button" value="Listar Colunas" id='btn_list_table'>
                         </div>
                     </div>
+
+                    <div class='barra_separa'></div>
+
+                    <div  class="row">	
+                            <div class="grupo_cxs col-6" id="grupo_cx_id">
+                             
+                            <div class='bloc_item'>
+                                <p class='tit_result'>Qtd Tabelas Listadas:</p>
+                                <p id='result_table'>00000</p>
+                            </div>
+                            
+                            <div class='bloc_item'>
+                                <p class='tit_result'>Qtd Colunas Listadas:</p>
+                                <p id='result_cols'>00000</p>
+                            </div>
+                            
+                                <div class='container_table'>
+                                        <table id='table_list'  class='frmt_tabela_fretes'>
+                                        </table>
+                                </div>
+                            </div>
+                     </div>
 
                     
     </form>

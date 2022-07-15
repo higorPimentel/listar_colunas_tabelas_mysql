@@ -1,5 +1,5 @@
 
-let txt_focus = document.querySelector(".frm_registro")
+let txt_focus = document.querySelector("#frm_regist")
 
 txt_focus.addEventListener('focus', insere_foco_txt,true)
 txt_focus.addEventListener('blur', remove_foco_txt,true)
