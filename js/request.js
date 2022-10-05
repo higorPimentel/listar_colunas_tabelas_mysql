@@ -89,8 +89,8 @@ function valida_conexao () {
             if(retorno ==0) {
                 $('.msg_sucesso').html('A conexão com o banco de dados obteve Exito.') 
                 $('.info_database').html('> Status - Connected') 
-                $('.info_database').css('backgroundColor','#53868B') 
-                $('.info_database').css('color','#AEEEEE') 
+                $('.info_database').css('backgroundColor','rgba(85,107,47,0.6)') 
+                $('.info_database').css('color','white') 
                
                 conect_bd = 1
                 exibe_sucess()
